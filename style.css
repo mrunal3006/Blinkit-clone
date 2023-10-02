@@ -1,0 +1,245 @@
+nav{
+    position: sticky;
+    top: 0px;
+    background-color: white;
+    z-index: 2;
+}
+
+
+
+.vertical-line{
+    border-left: 2px solid #f2f2f2;
+    height: 60px;
+
+}
+.nav-delivery>h5{
+    font-weight: 900;
+    margin-top: 10px;
+}
+.nav-delivery>p{
+    font-size: 13px;
+}
+#my-nav-search{
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    border:1px solid #f2f2f2;
+    padding: 10px;
+}
+#my-nav-search>input{
+    border: none;
+    width: 40vw;
+    height: 50px;
+    background-color: transparent;
+}
+.my-cat-btn{
+    border-radius: 10px !important;
+    background-color: green !important;
+    color: white !important;
+    font-weight: 600 !important;
+    
+}
+#hero-section{
+    display: flex;
+    justify-content: center;
+}
+#categories-1{
+    display: flex;
+    flex-wrap: wrap;
+    padding-inline: 4.5vw;
+    justify-content: space-around;
+}
+.scroll-container{
+    width: 85vw;
+    background-color: whitesmoke;
+    margin: auto;
+}
+.list{
+    white-space: nowrap;
+    overflow-x: scroll;
+}
+.list::-webkit-scrollbar{
+    display: none;
+}
+.list>img{
+    display: inline-block;
+    margin: 10px;
+}
+.category{
+    width: 85vw;
+    margin: auto;
+}
+.my-card{
+    display: inline-block !important;
+    width: 220px;
+    box-sizing: border-box;
+    border-radius: 15px !important;
+    white-space: wrap;
+    margin-inline: 10px;
+}
+.my-card>img{
+    display: inline-block;
+    margin: auto;
+}
+.time{
+    background-color: #f2f2f2;
+    font-weight: 700;
+    font-size: 9px;
+    color: rgb(54, 54, 54);
+    width: fit-content;
+    padding: 3px;
+    border-radius: 5px;
+}
+.product_weight{
+    font-size: 13px;
+    color: #666666;
+}
+.row-3>p{
+    margin: 0px;
+}
+.my-tag{
+    position: absolute;
+    top: 0px;
+    left: 4px;
+    width: 40px;
+    background-color: #528cee;
+    text-align: center;
+    color: white;
+    font-weight: 900;
+    font-size: 13px;
+}
+footer{
+    width: 85vw;
+    margin: auto;
+}
+
+#my-footer-row-3{
+    text-align: justify;
+    font-size: 15px;
+    color: #666666;
+}
+#my-footer-row-2{
+    font-size: 13px;
+    text-align: justify;
+    color: #666666;
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+#footer_row_2_col2{
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#footer_row_2_col1{
+flex: 1;
+padding-inline: 10px;
+}
+#footer_row_2_col1>h6{
+    color: #666666;
+}
+.some-box{
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #213a50;
+}
+
+#footer_row_2_col3{
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+}
+.social-icon{
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+    align-items: center;
+    margin: auto;
+    border-radius: 50%;
+}
+.social-icon:hover{
+    color: black;
+    background-color: #f8cb45;
+    box-shadow: 3px 3px 15px black;
+
+}
+#my-footer-row-1{
+    display: flex;
+    margin-top: 30px;
+
+}
+#footer_table_1{
+flex: 2;
+width: 100%;
+}
+#footer_table_2{
+flex: 3;
+}
+table{
+    width: 100%;
+}
+
+td{
+    color: #666666;
+    line-height: 30px;
+}
+td:hover{
+    text-decoration: underline;
+    color: red;
+    cursor: pointer;
+}
+
+@media screen and (max-width:480px){
+    #hero-section{
+        display: none !important;
+    }
+    nav,#my-footer-row-1{
+        flex-direction: column !important;
+        align-items: center !important;
+        margin: auto;
+    }
+   #my-footer-row-2,#footer_table_1,#footer_table_2,#footer_row_2_col2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+    td{
+        text-align: center;
+        padding-inline: 12px;
+        font-size: 12px;
+    }
+    .some-box{
+        margin-top: 10px;
+    }
+    #footer_row_2_col3{
+        justify-content: space-between;
+        width: 90vw;
+        margin: auto;
+        margin-top: 10px;
+    }
+    .vertical-line{
+        display: none;
+    }
+    #my-nav-search{
+        width: 90vw;
+    }
+    nav{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        position: static;
+    }
+
+
+}
